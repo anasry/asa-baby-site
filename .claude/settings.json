@@ -2,6 +2,7 @@
   "permissions": {
     "allow": [
       "mcp__remote-devices__asa-baby-elementor__mcp-adapter-execute-ability"
+      "Bash(python3 -I /mnt/project-files/ressources-familles/outils/*)"
     ]
   }
 }
