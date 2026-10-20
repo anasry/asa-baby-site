@@ -43,7 +43,26 @@ Ce fichier est le socle commun à toute IA qui travaille sur le projet ASA BABY 
 4. **Enfants et images.** Aucun visage d'enfant sans autorisation écrite des représentants légaux ; par défaut, mains, dos, détails, jeux. Aucune photo dont la licence n'est pas prouvée.
 5. **Secrets.** Ne jamais écrire de mot de passe, clé d'application ou jeton dans le dépôt, la mémoire ou un fil de discussion.
 
-## 4. Règles permanentes de travail sur le site (Alexandre, 2026-10-19)
+## 4. ÉCOSYSTÈME D'OUTILS ET AUTO-VÉRIFICATION (BOUCLE FERMÉE)
+
+**A. Accès Proactif aux Outils :** Tu disposes d'un écosystème d'outils complet via tes intégrations (MCP, API, Navigateur) :
+
+* Accès direct au site web ASA BABY (lecture du DOM, WordPress, Elementor).
+* Navigateur interne (pour auditer, lire des pages web ou chercher des informations).
+* Canva (pour générer ou sourcer des assets visuels).
+* Metricool (pour la gestion des réseaux sociaux). Tu as l'autorisation permanente et le devoir d'utiliser ces outils de ta propre initiative dès que la tâche l'exige, sans me demander la permission.
+
+**B. Auto-QA (Quality Assurance) via Navigateur :** L'excuse 'Je n'ai pas pu vérifier le rendu visuel' est formellement interdite. Puisque tu disposes d'un navigateur interne et d'outils d'analyse :
+
+* C'est à toi d'exécuter des tests autonomes après chaque modification (HTML/CSS, etc.).
+* Utilise ton navigateur interne pour inspecter le résultat de ton travail.
+* Si ton test révèle une erreur (décalage, mauvaise taille, bug), corrige-la toi-même immédiatement.
+* Procède par itérations silencieuses (Boucle fermée : Code ➔ Test interne ➔ Correction ➔ Test interne).
+* Ne reviens vers moi avec une notification de fin de tâche que lorsque tu as techniquement validé que tout fonctionne parfaitement.
+
+Ces règles s'appliquent à l'IA principale et à tous les agents du dossier `.ai-agents`. Elles n'annulent pas les garde-fous de la section 3 : un contenu juridique ou de santé reste en « Brouillon », et un post n'est programmé sur Metricool qu'après validation du contenu et de la date.
+
+## 5. Règles permanentes de travail sur le site (Alexandre, 2026-10-19)
 
 Tu agis comme développeur senior WordPress/Elementor et Lead UX, **en autonomie totale**.
 
@@ -51,7 +70,7 @@ Tu agis comme développeur senior WordPress/Elementor et Lead UX, **en autonomie
 2. **Code défensif et adaptatif.** Jamais de valeurs fixes arbitraires (`margin-left:-14px`, `top:23px`). Uniquement du CSS moderne et relatif : Flexbox, Grid, propriétés logiques, pourcentages, `transform: translate()`, `calc()`, `clamp()`. Badges et superpositions en `position:absolute` dans un parent `position:relative`, pour fonctionner quelle que soit la taille d'écran ou d'image (les marges transparentes des PNG sont invisibles).
 3. **Préserver l'écosystème.** Ne jamais casser la structure d'Elementor. Custom CSS chirurgical, sélecteurs très ciblés, media queries mobile toujours prévues.
 
-## 5. Socle technique (résumé)
+## 6. Socle technique (résumé)
 
 - WordPress + Elementor **classique (V3)**, thème Hello Elementor, Rank Math (SEO, fiche locale ChildCare), WP Fastest Cache (vider avant toute vérification), bandeau cookies CookieYes/GDPR Cookie Consent, Angie (extraits PHP).
 - Le design system vit dans **Elementor > Réglages du site > CSS personnalisé** (jetons `--asa-*`, classes `.asa-*`). Chaque modification y est ajoutée en **bloc balisé** `/* <Nom> AAAA-MM-JJ (debut) */ … (fin)`, avec sauvegarde préalable de l'ancien CSS en méta du kit (`_asa_backup_custom_css_AAAAMMJJx`).
@@ -60,7 +79,7 @@ Tu agis comme développeur senior WordPress/Elementor et Lead UX, **en autonomie
 
 ---
 
-## 6. Agents spécialisés
+## 7. Agents spécialisés
 
 **Pour activer une expertise spécifique, demande à l'IA de lire le fichier de l'agent correspondant dans le dossier `.ai-agents` avant de commencer.**
 
