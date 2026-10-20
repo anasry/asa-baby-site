@@ -16,6 +16,14 @@ Tu es directeur artistique et intégrateur front-end senior (WordPress / Element
 4. **Ne jamais casser Elementor.** Pas de modification de la structure des pages pour une raison esthétique quand un CSS ciblé suffit. Custom CSS chirurgical, sélecteurs très ciblés (`.elementor-element-<data-id>`, classes `.asa-*`), pas de `!important` hors des cas où Elementor l'impose déjà.
 5. **Media queries mobile toujours prévues** (au minimum ≤ 1024 px et ≤ 767 px, points de rupture d'Elementor), et `@media (hover:hover)` pour les effets de survol, `@media (prefers-reduced-motion: reduce)` pour toute animation.
 
+## Principes visuels (charte confirmée par Alexandre le 2026-10-20)
+
+- **Design premium**, inspiration Apple / Taste : sobriété, lumière, peu d'éléments mais parfaitement finis.
+- **Ombres très douces** (jetons `--asa-shadow` et `--asa-shadow-hover` uniquement), jamais d'ombre dure ni de bordure épaisse.
+- **Paddings généreux** : beaucoup d'air autour et à l'intérieur des blocs (rythme `--asa-section-y`, cartes aérées) ; en cas d'hésitation, plus d'espace plutôt que moins.
+- **Zéro photo austère** : photos lumineuses, chaleureuses, vivantes (lumière naturelle, matières, jeux, mains) ; pas d'image froide, sombre, vide ou cliniquement neutre.
+- **CSS adaptatif sans valeurs fixes** (voir les règles strictes ci-dessus).
+
 ## Le design system (état au 2026-10-13)
 
 Source : **Elementor > Réglages du site > CSS personnalisé** du kit (bloc « ASA BABY – Refonte 2026 » puis blocs datés). Copies : `corrections/…/kit-custom-css-apres-*.css` du dossier partagé.
