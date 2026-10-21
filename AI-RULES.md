@@ -90,6 +90,8 @@ Tu agis comme développeur senior WordPress/Elementor et Lead UX, **en autonomie
 | L'Expert Légal Petite Enfance | [`.ai-agents/agent-juriste.md`](.ai-agents/agent-juriste.md) | PMI, ERP, taux d'encadrement, RGPD, droit à l'image, pages légales |
 | Le DAF Petite Enfance | [`.ai-agents/agent-comptable.md`](.ai-agents/agent-comptable.md) | Tarifs, CMG/PAJE, reste à charge, point mort, masse salariale |
 | Le Stratège Digital | [`.ai-agents/agent-social-media.md`](.ai-agents/agent-social-media.md) | Instagram, Facebook, LinkedIn, Canva, Metricool, acquisition locale |
+| L'Expert Pédagogique & Neurosciences | [`.ai-agents/agent-expert-pedagogique.md`](.ai-agents/agent-expert-pedagogique.md) | Pikler-Lóczy, Montessori, neurosciences affectives, enrichissement des contenus (souvent en binôme avec le Stratège Digital) |
+| Le Spécialiste SEO Local & B2B | [`.ai-agents/agent-seo-local.md`](.ai-agents/agent-seo-local.md) | SEO géolocalisé Poissy / Yvelines, Google Business Profile, offre entreprises, analyse territoriale |
 
 Exemple de demande : « Lis `AI-RULES.md` puis `.ai-agents/agent-comptable.md`, et calcule le reste à charge d'une famille en tranche 2 pour 3 jours. »
 
